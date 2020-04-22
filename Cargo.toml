@@ -1,0 +1,18 @@
+[package]
+name = "leap-sys"
+version = "0.1.0"
+authors = ["Urho Laukkarinen <urho.laukkarinen@gmail.com>"]
+edition = "2018"
+
+license-file = "LICENSE"
+readme = "README.md"
+description = "Rust bindings for the Leap Motion C library"
+homepage = "https://github.com/urholaukkarinen/leap-sys"
+repository = "https://github.com/urholaukkarinen/leap-sys"
+keywords = ["leap", "leapmotion", "gesture", "tracking", "vr"]
+categories = ["external-ffi-bindings", "hardware-support", "computer-vision"]
+
+build = "build.rs"
+
+[build-dependencies]
+bindgen = "0.53.2"
