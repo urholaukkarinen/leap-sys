@@ -6,6 +6,7 @@ fn main() {
     bindgen::Builder::default()
         .header("LeapC.h")
         .parse_callbacks(Box::new(bindgen::CargoCallbacks))
+        .allowlist_file("LeapC.h")
         .generate()
         .expect("Unable to generate bindings")
         .write_to_file("src/lib.rs")
